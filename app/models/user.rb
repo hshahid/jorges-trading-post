@@ -4,5 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-   validates :name, presence: true      
+   validates :name, presence: true   
+
+   #delte lisitngs if user account is deleted
+  has_many :listings, dependent: :destroy  
 end

@@ -12,4 +12,6 @@ class Listing < ActiveRecord::Base
 
   #validate image
   validates_attachment_presence :image
+
+  belongs_to :user 
 end
