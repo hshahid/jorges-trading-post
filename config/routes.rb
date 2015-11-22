@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :listings
   get 'pages/about'
 
   get 'pages/contact'
+
+  get 'seller' => "listings#seller"
 
   root 'listings#index'
   # The priority is based upon order of creation: first created -> highest priority.
