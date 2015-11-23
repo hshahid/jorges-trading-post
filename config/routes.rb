@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-  resources :listings
+  resources :listings do
+    resources :orders
+  end
+  
   get 'pages/about'
 
   get 'pages/contact'
