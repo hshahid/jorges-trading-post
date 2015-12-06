@@ -25,6 +25,7 @@ gem "figaro"
 gem 'devise'
 gem 'omniauth-facebook'
 gem 'omniauth-oauth2', '~> 1.3.1'
+gem 'omniauth-google-oauth2'
 # bundle exec rake doc:rails generates the API under doc/api.
 group :doc do
   gem 'sdoc', require: false
