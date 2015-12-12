@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.2.1"
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
@@ -27,6 +27,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-oauth2', '~> 1.3.1'
 gem 'omniauth-google-oauth2'
 gem 'activemerchant'
+gem 'stripe'
 # bundle exec rake doc:rails generates the API under doc/api.
 group :doc do
   gem 'sdoc', require: false
