@@ -14,7 +14,7 @@
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li><%= link_to "About", pages_about_path %></li>
-      <li><%= link_to "Contact", pages_contact_path %></l>
+      <li><%= link_to "Contact", pages_contact_path %></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
@@ -31,15 +31,10 @@
 
             </ul>
           </li>
-        
-        
-        
-        
       <% else %>
-        <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
-        <li><%= link_to "Sign up", new_user_registration_path %></li>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
         <li><%= link_to "Sign In", new_user_session_path %></li>
       <% end %>
-      </ul>
+    </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
